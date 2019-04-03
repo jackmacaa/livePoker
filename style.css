@@ -4,32 +4,86 @@
   font-size: 16px;
 }
 
+.title {
+  float: right;
+  font-family: "Roboto Condensed";
+  font-size: 3rem;
+  padding: 5px;
+}
 .nav {
   background: #298a0b;
-  padding: 20px;
+  height: 75px;
 }
 
 .nav a {
   list-style: none;
-  font-size: 1.5rem;
+  position: relative;
+  top: 20px;
+  font-size: 2rem;
   text-decoration: none;
   color: #fff;
-  padding: 7px;
+  padding: 10px;
+  font-family: "Roboto Condensed";
 }
 
 .nav a:hover {
   color: #000;
 }
 
+.input-cash {
+  padding: 7px;
+}
+
+.cash-table {
+  padding: 7px;
+}
+
+.delete-cash {
+  padding: 7px;
+}
+
+input[type="text"],
+select {
+  width: 150px;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #298a0b;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 600px;
+  border-collapse: collapse;
+  border: 1px solid #fff;
+  border-style: hidden;
+}
+table caption {
+  background-color: #298a0b;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
 body {
-  background: #777;
+  background: #888;
+}
+
+h1 {
+  font-family: "Roboto Condensed";
+  font-size: 1.5rem;
 }
 
 p {
-  padding: 10px;
-}
-
-.input-cash {
-}
-.cash-table {
+  padding: 7px;
 }
