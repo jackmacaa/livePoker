@@ -1,58 +1,90 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "tahoma";
   font-size: 16px;
 }
 
 .title {
-  float: right;
-  font-family: "Roboto Condensed";
   font-size: 3rem;
   padding: 5px;
 }
+
 .nav {
-  background: #298a0b;
-  height: 75px;
+  background: #2a6db9;
+  height: 70px;
+  text-align: center;
 }
 
 .nav a {
   list-style: none;
   position: relative;
-  top: 20px;
+  top: 10px;
   font-size: 2rem;
   text-decoration: none;
   color: #fff;
-  padding: 10px;
-  font-family: "Roboto Condensed";
-}
+  padding: 5px 30px;
 
+}
 .nav a:hover {
   color: #000;
 }
 
-.input-cash {
-  padding: 7px;
+.container {
+  width: 80%;
+  margin-left:auto; 
+  margin-right:auto;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
 }
 
-.cash-table {
-  padding: 7px;
+.input-cash, #notes, #notes-table, .cash-table, .cash-table-overall, .control, #add-player {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
 }
 
-.delete-cash {
-  padding: 7px;
+.control {
+  text-align: center;
+}
+
+
+#notes {
+  display: none;
+}
+
+#notes-table{
+  display: none;
+}
+
+#player-table {
+  display: none;
+}
+
+#add-player{
+  display: none;
+}
+
+.cash-table ul li {
+  list-style: none;
 }
 
 input[type="text"],
 select {
-  width: 150px;
-  padding: 5px 5px;
-  display: inline-block;
+  width: 100%;
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  resize: vertical;
 }
 
 button[type="submit"] {
-  background-color: #298a0b;
+  background-color: #5ba53e;
   padding: 10px 10px;
   margin: 8px 0;
   border: none;
@@ -60,30 +92,55 @@ button[type="submit"] {
   cursor: pointer;
 }
 
+.button {
+  background-color: #5ba53e;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #fff;
+
+}
+
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #6cc04a;
 }
 
 table {
-  width: 600px;
+  margin: 20px;
+  width: 95%;
+  margin-left:auto; 
+  margin-right:auto;
   border-collapse: collapse;
   border: 1px solid #fff;
-  border-style: hidden;
+  text-align: center;
 }
 table caption {
-  background-color: #298a0b;
+  background-color: #5ba53e;
   font-weight: bold;
   font-size: 1.5rem;
 }
+
 body {
-  background: #888;
+  background: #fff;
 }
 
 h1 {
-  font-family: "Roboto Condensed";
   font-size: 1.5rem;
+  text-align: center;
 }
 
-p {
-  padding: 7px;
+footer {
+  background: #2a6db9;
+  height: 50px;
+  text-align: center;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
 }
